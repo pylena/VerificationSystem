@@ -33,3 +33,9 @@ Validates form inputs.
 * Verification Page (/verify)
 Users can enter a verification code to check document status.
 
+## Entity Framework vs Dapper
+two versions are implemented for fetching.
+* EF Core may not be as fast as Dapper for complex queries, especially when dealing with large datasets. This is due to the overhead of tracking entities, generating SQL dynamically, and handling lazy loading.
+* Dapper is generally faster than EF Core for read-heavy operations
+
+
